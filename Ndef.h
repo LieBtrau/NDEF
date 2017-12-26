@@ -7,8 +7,9 @@
 
 #include <Arduino.h>
 
-//#define NDEF_DEBUG 1
-//#define NULL (void *)0
+#ifndef NULL
+  #define NULL (void *)0
+#endif
 
 void PrintHex(const byte *data, const long numBytes);
 void PrintHexChar(const byte *data, const long numBytes);
