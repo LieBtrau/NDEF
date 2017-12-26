@@ -1,4 +1,4 @@
-#if 0
+#if 1
 #include <SPI.h>
 #include <PN532_SPI.h>
 #include <PN532.h>
@@ -18,7 +18,7 @@ NfcAdapter nfc = NfcAdapter(pn532_i2c);
 #endif
 
 void setup(void) {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("NDEF Reader");
   nfc.begin();
 }
