@@ -16,8 +16,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef NEW_H
-#define NEW_H
+#pragma once
+#ifndef ARDUINO_ARCH_STM32
 
 #include <stdlib.h>
 
@@ -34,4 +34,3 @@ extern "C" void __cxa_guard_release (__guard *);
 extern "C" void __cxa_guard_abort (__guard *);
 extern "C" void __cxa_pure_virtual(void);
 #endif
-
